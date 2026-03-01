@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Format Button Color Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { padding: 40px 24px; background: var(--color-bg-alt); }
+        .option-label {
+            text-align: center;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: var(--color-dark);
+            margin: 2.5rem 0 0.3rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--color-primary);
+        }
+        .option-label:first-child { margin-top: 0; border-top: none; padding-top: 0; }
+        .option-desc {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--color-gray);
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* --- PALETTE A: Cool Harmony --- */
+        .palette-a .petro-tool__format--python { color: #6D28D9; }
+        .palette-a .petro-tool__format--python:hover { color: #5521B5; background: rgba(109,40,217,0.04); }
+        .palette-a .petro-tool__format--jupyter { color: #0D9488; }
+        .palette-a .petro-tool__format--jupyter:hover { color: #0A7B71; background: rgba(13,148,136,0.04); }
+
+        /* --- PALETTE B: Warm + Cool Balance --- */
+        .palette-b .petro-tool__format--python { color: #B45309; }
+        .palette-b .petro-tool__format--python:hover { color: #92400E; background: rgba(180,83,9,0.04); }
+        .palette-b .petro-tool__format--jupyter { color: #7C3AED; }
+        .palette-b .petro-tool__format--jupyter:hover { color: #6D28D9; background: rgba(124,58,237,0.04); }
+
+        /* --- PALETTE C: Brand Faithful --- */
+        .palette-c .petro-tool__format--python { color: #306998; }
+        .palette-c .petro-tool__format--python:hover { color: #24506F; background: rgba(48,105,152,0.04); }
+        .palette-c .petro-tool__format--jupyter { color: #D95F02; }
+        .palette-c .petro-tool__format--jupyter:hover { color: #B34D01; background: rgba(217,95,2,0.04); }
+
+        /* --- PALETTE D: Jewel Tones --- */
+        .palette-d .petro-tool__format--python { color: #0369A1; }
+        .palette-d .petro-tool__format--python:hover { color: #075985; background: rgba(3,105,161,0.04); }
+        .palette-d .petro-tool__format--jupyter { color: #BE185D; }
+        .palette-d .petro-tool__format--jupyter:hover { color: #9D174D; background: rgba(190,24,93,0.04); }
+    </style>
+</head>
+<body>
+
+<!-- PALETTE A -->
+<h2 class="option-label">A — Cool Harmony</h2>
+<p class="option-desc">Violet Python + deep teal Jupyter. All cool tones, cohesive and calm.</p>
+<div class="palette-a">
+    <div class="petro-tool">
+        <h4 class="petro-tool__name">VESIcal Volatile Solubility Python Library</h4>
+        <p class="petro-tool__desc">A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts.</p>
+        <div class="petro-tool__meta">
+            <div class="petro-tool__meta-row">
+                <span class="petro-tool__meta-label">Cite:</span>
+                Iacovino K, Matthews S, Wieser PE, Moore GM, Bégué F (2021) "VESIcal Part I…", <em>Earth and Space Science</em>.
+            </div>
+        </div>
+        <div class="petro-tool__formats">
+            <a href="#" class="petro-tool__format petro-tool__format--python"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+            <a href="#" class="petro-tool__format petro-tool__format--jupyter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,128a8,8,0,0,1-3,6.25l-40,32a8,8,0,1,1-10-12.5L107.19,128,75,102.25a8,8,0,1,1,10-12.5l40,32A8,8,0,0,1,128,128Zm48,24H136a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm56-96V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Z"></path></svg> <em>NotebooksNow!</em>&nbsp; Interactive Publication</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part I (Earth and Space Science, 2021)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part II (Earth and Space Science, 2022)</a>
+        </div>
+    </div>
+</div>
+
+<!-- PALETTE B -->
+<h2 class="option-label">B — Warm + Cool Balance</h2>
+<p class="option-desc">Amber Python + purple Jupyter. Strong contrast, warm energy.</p>
+<div class="palette-b">
+    <div class="petro-tool">
+        <h4 class="petro-tool__name">VESIcal Volatile Solubility Python Library</h4>
+        <p class="petro-tool__desc">A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts.</p>
+        <div class="petro-tool__meta">
+            <div class="petro-tool__meta-row">
+                <span class="petro-tool__meta-label">Cite:</span>
+                Iacovino K, Matthews S, Wieser PE, Moore GM, Bégué F (2021) "VESIcal Part I…", <em>Earth and Space Science</em>.
+            </div>
+        </div>
+        <div class="petro-tool__formats">
+            <a href="#" class="petro-tool__format petro-tool__format--python"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+            <a href="#" class="petro-tool__format petro-tool__format--jupyter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,128a8,8,0,0,1-3,6.25l-40,32a8,8,0,1,1-10-12.5L107.19,128,75,102.25a8,8,0,1,1,10-12.5l40,32A8,8,0,0,1,128,128Zm48,24H136a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm56-96V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Z"></path></svg> <em>NotebooksNow!</em>&nbsp; Interactive Publication</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part I (Earth and Space Science, 2021)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part II (Earth and Space Science, 2022)</a>
+        </div>
+    </div>
+</div>
+
+<!-- PALETTE C -->
+<h2 class="option-label">C — Brand Faithful</h2>
+<p class="option-desc">Python's official steel blue + Jupyter's signature orange. Recognizable to developers.</p>
+<div class="palette-c">
+    <div class="petro-tool">
+        <h4 class="petro-tool__name">VESIcal Volatile Solubility Python Library</h4>
+        <p class="petro-tool__desc">A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts.</p>
+        <div class="petro-tool__meta">
+            <div class="petro-tool__meta-row">
+                <span class="petro-tool__meta-label">Cite:</span>
+                Iacovino K, Matthews S, Wieser PE, Moore GM, Bégué F (2021) "VESIcal Part I…", <em>Earth and Space Science</em>.
+            </div>
+        </div>
+        <div class="petro-tool__formats">
+            <a href="#" class="petro-tool__format petro-tool__format--python"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+            <a href="#" class="petro-tool__format petro-tool__format--jupyter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,128a8,8,0,0,1-3,6.25l-40,32a8,8,0,1,1-10-12.5L107.19,128,75,102.25a8,8,0,1,1,10-12.5l40,32A8,8,0,0,1,128,128Zm48,24H136a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm56-96V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Z"></path></svg> <em>NotebooksNow!</em>&nbsp; Interactive Publication</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part I (Earth and Space Science, 2021)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part II (Earth and Space Science, 2022)</a>
+        </div>
+    </div>
+</div>
+
+<!-- PALETTE D -->
+<h2 class="option-label">D — Jewel Tones</h2>
+<p class="option-desc">Sky blue Python + deep rose Jupyter. Bold and sophisticated.</p>
+<div class="palette-d">
+    <div class="petro-tool">
+        <h4 class="petro-tool__name">VESIcal Volatile Solubility Python Library</h4>
+        <p class="petro-tool__desc">A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts.</p>
+        <div class="petro-tool__meta">
+            <div class="petro-tool__meta-row">
+                <span class="petro-tool__meta-label">Cite:</span>
+                Iacovino K, Matthews S, Wieser PE, Moore GM, Bégué F (2021) "VESIcal Part I…", <em>Earth and Space Science</em>.
+            </div>
+        </div>
+        <div class="petro-tool__formats">
+            <a href="#" class="petro-tool__format petro-tool__format--python"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--web"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+            <a href="#" class="petro-tool__format petro-tool__format--jupyter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,128a8,8,0,0,1-3,6.25l-40,32a8,8,0,1,1-10-12.5L107.19,128,75,102.25a8,8,0,1,1,10-12.5l40,32A8,8,0,0,1,128,128Zm48,24H136a8,8,0,0,0,0,16h40a8,8,0,0,0,0-16Zm56-96V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,200V56H40V200H216Z"></path></svg> <em>NotebooksNow!</em>&nbsp; Interactive Publication</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part I (Earth and Space Science, 2021)</a>
+            <a href="#" class="petro-tool__format petro-tool__format--paper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M232,48H160a40,40,0,0,0-32,16A40,40,0,0,0,96,48H24a8,8,0,0,0-8,8V200a8,8,0,0,0,8,8H96a24,24,0,0,1,24,24,8,8,0,0,0,16,0,24,24,0,0,1,24-24h72a8,8,0,0,0,8-8V56A8,8,0,0,0,232,48ZM96,192H32V64H96a24,24,0,0,1,24,24V200A39.81,39.81,0,0,0,96,192Zm128,0H160a39.81,39.81,0,0,0-24,8V88a24,24,0,0,1,24-24h64ZM160,88h40a8,8,0,0,1,0,16H160a8,8,0,0,1,0-16Zm48,40a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,128Zm0,32a8,8,0,0,1-8,8H160a8,8,0,0,1,0-16h40A8,8,0,0,1,208,160Z"/></svg> Publication, Part II (Earth and Space Science, 2022)</a>
+        </div>
+    </div>
+</div>
+
+<div style="height: 60px;"></div>
+</body>
+</html>

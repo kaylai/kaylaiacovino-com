@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools for Petrologists — Dr. Kayla Iacovino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="container">
+            <a href="../index.html" class="site-nav__brand">Dr. Kayla Iacovino</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="site-nav__links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../my-research/">Research</a></li>
+                <li><a href="../tools-for-petrologists/">Tools for Petrologists</a></li>
+                <li><a href="../documentaries/">Documentaries</a></li>
+                <li><a href="../press/">Press</a></li>
+                <li><a href="../outreach/">Outreach</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <header class="page-header">
+            <h1>Tools for Petrologists</h1>
+            <p class="page-header__subtitle">I'm glad these tools continue to be a useful resource for so many. If you have a question about any of these tools, feel free to reach out via email at kiacovino [at] seti [dot] org</p>
+            <div class="divider--wide"></div>
+        </header>
+
+        <!-- Section 1: Spreadsheets, Calculators, and Python Code -->
+        <section class="content-band">
+            <div class="section-header">
+                <!-- Phosphor Wrench -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg>
+                <h2>Spreadsheets, Calculators, and Python Code</h2>
+            </div>
+            <p class="content-band__subtitle">Stuff that I created or co-created.</p>
+
+            <!-- Tool: VESIcal Volatile Solubility Python Library -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">VESIcal Volatile Solubility Python Library</h4>
+                <p class="petro-tool__desc">A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts. Full documentation can be found on <a href="https://vesical.readthedocs.io/en/latest/" target="_blank" rel="noopener">ReadTheDocs</a>.
+                <div class="petro-tool__formats">
+                    <a href="https://github.com/kaylai/VESIcal" class="petro-tool__format petro-tool__format--python" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+                    <a href="https://vesical.anvil.app/" class="petro-tool__format petro-tool__format--web" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+                </div>
+                <div class="petro-tool__pubs">
+                    <h5 class="petro-tool__pubs-heading">Publications</h5>
+                    <ul class="petro-tool__pubs-list">
+                        <li><a href="https://agu.curve.space/articles/NN0001" target="_blank" rel="noopener"><em>NotebooksNow!</em> Interactive Publication</a></li>
+                        <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020EA001584" target="_blank" rel="noopener">Iacovino et al. (2021), <em>Earth and Space Science</em></a></li>
+                        <li><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EA001932" target="_blank" rel="noopener">Wieser et al. (2022), <em>Earth and Space Science</em></a></li>
+                    </ul>
+                    <p class="petro-tool__pubs-cite">Iacovino K, Matthews S, Wieser PE, Moore GM, Bégué F (2021) "VESIcal Part I: An open-source thermodynamic model engine for mixed volatile (H2O-CO2) solubility in silicate melts", <em>Earth and Space Science</em>, <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020EA001584">doi:10.1029/2020EA001584</a>.</p>
+                </div>
+            </div>
+
+            <!-- Tool: DensityX: Glass Density Calc -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">DensityX: Glass Density Calc</h4>
+                <p class="petro-tool__desc">Input the composition of a silicate glass/melt in terms of wt% and the H2O content plus temperature and pressure. Outputs density in g/cm3 and g/L.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">Refs:</span> <a href="https://www.jvolcanica.org/ojs/index.php/volcanica/article/view/12/33">Iacovino &amp; Till (2019)</a>; <a href="http://rimg.geoscienceworld.org/content/24/1/25.short">Lange &amp; Carmichael (1990)</a>; <a href="http://www.sciencemag.org/content/283/5406/1314.short">Ochs &amp; Lange (1999)</a>; <a href="http://petrology.oxfordjournals.org/content/early/2010/09/21/petrology.egq048.short?rss=1">Hack &amp; Thompson (2011)</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">History:</span>
+                        <strong>v4.1:</strong> Updated molecular weight of H2O.
+                        <strong>v4.0:</strong> Updated to match python code v1.1.0.
+                        <strong>v3.2:</strong> Updated reference list.
+                        <strong>v3.0:</strong> Updated temperature dependence data.</div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/DensityX.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                    <a href="https://github.com/kaylai/DensityX" class="petro-tool__format petro-tool__format--python" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (pip / GitHub)</a>
+                    <a href="https://densityx.herokuapp.com/" class="petro-tool__format petro-tool__format--web" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm87.62,96H175.79C174,83.49,159.94,57.67,148.41,42.4A88.19,88.19,0,0,1,215.63,120ZM96.23,136h63.54c-2.31,41.61-22.23,67.11-31.77,77C118.45,203.1,98.54,177.6,96.23,136Zm0-16C98.54,78.39,118.46,52.89,128,43c9.55,9.93,29.46,35.43,31.77,77Zm11.36-77.6C96.06,57.67,82,83.49,80.21,120H40.37A88.19,88.19,0,0,1,107.59,42.4ZM40.37,136H80.21c1.82,36.51,15.85,62.33,27.38,77.6A88.19,88.19,0,0,1,40.37,136Zm108,77.6c11.53-15.27,25.56-41.09,27.38-77.6h39.84A88.19,88.19,0,0,1,148.41,213.6Z"/></svg> Web Tool</a>
+                </div>
+                <div class="petro-tool__pubs">
+                    <h5 class="petro-tool__pubs-heading">Publication</h5>
+                    <ul class="petro-tool__pubs-list">
+                        <li><a href="https://www.jvolcanica.org/ojs/index.php/volcanica/article/view/12/33" target="_blank" rel="noopener">Iacovino &amp; Till (2019), <em>Volcanica</em></a></li>
+                    </ul>
+                    <p class="petro-tool__pubs-cite">Iacovino, K. and Till, C. B. (2019) "DensityX: A program for calculating the densities of magmatic liquids up to 1,627 C and 30 kbar", <em>Volcanica</em>, 2(1), pp. 1-10. <a href="https://arizona-asu-primo.hosted.exlibrisgroup.com/openurl/01ASU/01ASU_SP??__char_set=utf8&id=doi:10.30909/vol.02.01.0110&sid=libx&genre=article">doi:10.30909/vol.02.01.0110</a></p>
+                </div>
+            </div>
+
+            <!-- Tool: TAS Diagram Plotter -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">TAS Diagram Plotter</h4>
+                <p class="petro-tool__desc">Allows for fast plotting onto a TAS (total alkali silica) diagram for use in naming your volcanic rock by composition. Created using coordinates as given in <a href="https://books.google.com/books?hl=en&lr=&id=u2tVu6Sbc4kC&oi=fnd&pg=PP1&dq=le+maitre+et+al+2002&ots=X7m6mu-fDn&sig=diKfWfN5gof70kR9HkRNCXa6Pck#v=onepage&q&f=false">Le Maitre et al (2002)</a>.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">Cite:</span> Iacovino, Kayla, &amp; Gouard, Cedric. (2021). TAS Diagram Plotter (3.0). Zenodo. <a href="https://doi.org/10.5281/zenodo.5907859">https://doi.org/10.5281/zenodo.5907859</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">History:</span> <strong>Version 3.0</strong> — New version by Cedric Gouard with significant improvements. <strong>Version 2.0</strong> — User can now resize the TAS diagram chart.</div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/TAS-Diagram-Plotter-3.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                    <a href="../downloads/tools/TAS-Diagram-Espanol.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Espanol (.xlsx)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Plutonic TAS Diagram Plotter -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Plutonic TAS Diagram Plotter</h4>
+                <p class="petro-tool__desc">Based on the Volcanic TAS Diagram Plotter (v2.0) with updated parameters and labels for plutonic rocks. Created by Paul Asimow using coordinates from <a href="https://www.sciencedirect.com/science/article/pii/0012825294900299">E. A. K. Middlemost (1994)</a>.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://doi.org/10.5281/zenodo.5907892">https://doi.org/10.5281/zenodo.5907892</a></div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Plutonic-TAS-Diagram-Plotter.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Calculate fO2 Buffer -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Calculate Oxygen Fugacity Buffer</h4>
+                <p class="petro-tool__desc">Tool to calculate oxygen fugacity in terms of common buffers. Useful for converting fO2 values into and between delta buffer values.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://zenodo.org/records/18746164">https://zenodo.org/records/18746164</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">History:</span> 
+                        <strong>v1.6:</strong> Fixed Graphite-CO buffer.
+                        <strong>v1.5:</strong> Fixed Re-ReO buffer.
+                        <strong>v1.4:</strong> Added Mn-MnO buffer.
+                        <strong>v1.3:</strong> Added GCO, Re-ReO, Cr-Cr2O3, MoMoO2.
+                        <strong>v1.2:</strong> Added Si-SiO2.
+                        <strong>v1.1:</strong> Added conversion from buffer value to logfO2.</div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Calc_fO2_buffer.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Oxygen Fugacity Buffer Plotter -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Oxygen Fugacity Buffer Plotter</h4>
+                <p class="petro-tool__desc">Python script that plots fO2 buffer values at any given pressure and temperature range.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://doi.org/10.5281/zenodo.5907875">https://doi.org/10.5281/zenodo.5907875</a></div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="https://github.com/kaylai/fO2bufferplotter" class="petro-tool__format petro-tool__format--python"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"/></svg> Python (GitHub)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Ferric/Ferrous Converter -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Ferric/Ferrous, Fe3+/FeT, fO2 Converter (Kress and Carmichael, 1991)</h4>
+                <p class="petro-tool__desc">Tool for calculating the ferric/ferrous iron ratio in a melt for any given fO2 and vice versa.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://doi.org/10.5281/zenodo.5907844">https://doi.org/10.5281/zenodo.5907844</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">Refs:</span> <a href="http://www.springerlink.com/content/m15215k1872486jt/">Kress &amp; Carmichael (1991)</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">History:</span> <strong>v3.2:</strong> Corrected error in cells J5 and J6. <strong>v3.1:</strong> Added Fe3+/FeT tab. <strong>v3.0:</strong> Added high pressure calculations. <strong>v2.2:</strong> Fixed dropdown bug.</div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Kress_and_Carmichael_fO2_Converter.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Hydrous Melts Conversion Tool -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Hydrous Melts Conversion Tool</h4>
+                <p class="petro-tool__desc">Converts anhydrous composition to hydrous melt composition. Includes VisualBasic macros. Also see <a href="../downloads/docs/Conversion-Tool-TUTORIAL.pdf">the tutorial</a>.</p>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Conversion_tool.xls" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xls)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Wtper-to-Molper Conversion Tool -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Wtper-to-Molper Conversion Tool</h4>
+                <p class="petro-tool__desc">Converts melt composition from wt% to mol%. Includes VisualBasic macros.</p>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/ConvWtpertoMolper.xls" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xls)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Oxide to Element Conversion Tool -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Oxide to Element Conversion Tool</h4>
+                <p class="petro-tool__desc">Converts compositions measured in oxides to elements and vice versa.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://doi.org/10.5281/zenodo.5907879">https://doi.org/10.5281/zenodo.5907879</a></div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Conv_OxidetoElement.xlsx" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xlsx)</a>
+                </div>
+            </div>
+
+            <!-- Tool: Water From Iron Reduction -->
+            <div class="petro-tool">
+                <h4 class="petro-tool__name">Water From Iron Reduction</h4>
+                <p class="petro-tool__desc">Calculates how much water was added to your melt due to reduction of iron during your run.</p>
+                <div class="petro-tool__meta">
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">DOI:</span> <a href="https://doi.org/10.5281/zenodo.5907885">https://doi.org/10.5281/zenodo.5907885</a></div>
+                    <div class="petro-tool__meta-row"><span class="petro-tool__meta-label">Refs:</span> <a href="http://www.springerlink.com/content/m15215k1872486jt/">Kress &amp; Carmichael (1991)</a></div>
+                </div>
+                <div class="petro-tool__formats">
+                    <a href="../downloads/tools/Reduction_of_Fe2O3toFeO_plus_H2O.xls" class="petro-tool__format petro-tool__format--excel"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M156,208a8,8,0,0,1-8,8H120a8,8,0,0,1-8-8V152a8,8,0,0,1,16,0v48h20A8,8,0,0,1,156,208ZM92.65,145.49a8,8,0,0,0-11.16,1.86L68,166.24,54.51,147.35a8,8,0,1,0-13,9.3L58.17,180,41.49,203.35a8,8,0,0,0,13,9.3L68,193.76l13.49,18.89a8,8,0,0,0,13-9.3L77.83,180l16.68-23.35A8,8,0,0,0,92.65,145.49Zm98.94,25.82c-4-1.16-8.14-2.35-10.45-3.84-1.25-.82-1.23-1-1.12-1.9a4.54,4.54,0,0,1,2-3.67c4.6-3.12,15.34-1.72,19.82-.56a8,8,0,0,0,4.07-15.48c-2.11-.55-21-5.22-32.83,2.76a20.58,20.58,0,0,0-8.95,14.95c-2,15.88,13.65,20.41,23,23.11,12.06,3.49,13.12,4.92,12.78,7.59-.31,2.41-1.26,3.33-2.15,3.93-4.6,3.06-15.16,1.55-19.54.35A8,8,0,0,0,173.93,214a60.63,60.63,0,0,0,15.19,2c5.82,0,12.3-1,17.49-4.46a20.81,20.81,0,0,0,9.18-15.23C218,179,201.48,174.17,191.59,171.31ZM40,112V40A16,16,0,0,1,56,24h96a8,8,0,0,1,5.66,2.34l56,56A8,8,0,0,1,216,88v24a8,8,0,1,1-16,0V96H152a8,8,0,0,1-8-8V40H56v72a8,8,0,0,1-16,0ZM160,80h28.68L160,51.31Z"/></svg> Excel (.xls)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: External Spreadsheets and Calculators -->
+        <section class="content-band content-band--alt">
+            <div class="section-header">
+                <!-- Phosphor ArrowSquareOut -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>
+                <h2>External Spreadsheets and Calculators</h2>
+            </div>
+            <p>Simple and extremely useful tools that I found online.</p>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h4><a href="https://www.mauriziopetrelli.info/python-for-geologists">Python Libraries for Earth Scientists</a></h4>
+                    <p>A curated list of python packages for use in the Earth Sciences by Maurizio Petrelli.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://www.gabbrosoft.org/spreadsheets.html">Gabbrosoft Mineralogical Spreadsheets</a></h4>
+                    <p>Spreadsheets for calculating mineral formulas based on electron microprobe analysis. Also includes Bulk KD calculator and Magma Density calculator.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://serc.carleton.edu/research_education/equilibria/mineralformulaerecalculation.html">Mineral Formula Calculations</a></h4>
+                    <p>Various excel spreadsheets from Carlton College for calculating formulas of various mineral types.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="https://www.rockptx.com/">rockPTX</a></h4>
+                    <p>An excellent resource for optical petrology and mineralogy. Contains high resolution scans of thin sections with explanations.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://www.webqc.org/balance.php">Chemical Equation Balancer</a></h4>
+                    <p>Balances chemical equations and allows calculation of moles or mass of products given reactants.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Models Available Online -->
+        <section class="content-band">
+            <div class="section-header">
+                <!-- Phosphor ArrowSquareOut -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"/></svg>
+                <h2>Models Available Online</h2>
+            </div>
+            <p>Some of my favorite models, none of which were made by me but all of which are used by me!</p>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h4><a href="http://ctserver.ofm-research.org/Papale/Papale.php">Papale model for H2O-CO2 partitioning/solubility in magmas</a></h4>
+                    <p>Calculate isobars, fluid/melt partitioning, saturation pressures, solubilities.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="https://itunes.apple.com/us/app/magmasat/id923790122?mt=12">MagmaSat for Mac</a></h4>
+                    <p>Determines saturation conditions for mixed H2O-CO2 fluid in natural silicate liquids.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://volcanoes.usgs.gov/yvo/aboutus/jlowenstern/other/software_jbl.html">VolatileCalc</a></h4>
+                    <p>Calculates H2O-CO2-melt equilibrium for rhyolite and basalt systems.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="https://drive.google.com/file/d/0B3DE3GpHRPQzLTBmWnhlNzVzWXM/view?usp=sharing">SolEx</a></h4>
+                    <p>Calculates basaltic melt and coexisting vapor compositions in C-O-H-S-Cl system. <a href="http://www.sciencedirect.com/science/article/pii/S0098300411003554">Computers and Geosciences vol. 45, pp. 87-97</a>.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://melts.ofm-research.org/">MELTS, rhyoliteMELTS, and pMELTS</a></h4>
+                    <p>Software for thermodynamic modeling of phase equilibria in magmatic systems. Works 500-2000 C and 0-2 GPa.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://melts.ofm-research.org/excel.html">MELTS for Excel</a></h4>
+                    <p>Microsoft Excel-based MELTS interface. <a href="http://onlinelibrary.wiley.com/doi/10.1002/2014GC005545/full">doi:10.1002/2014GC005545</a></p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://www.eos.ubc.ca/~krussell/VISCOSITY/grdViscosity.html">Model for Viscosity of Volatile-bearing Melts</a></h4>
+                    <p>From Giordano D, Russell JK &amp; Dingwell DB (2008). Also available as an <a href="http://www.eos.ubc.ca/~krussell/VISCOSITY/grdViscosity_files/grdViscosity.xls">Excel spreadsheet</a>.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="../downloads/tools/QUILF.zip">QUILF</a></h4>
+                    <p>Program to assess equilibria among Fe-Mg-Mn-Ti oxides, pyroxenes, olivine, and quartz. Windows only. See <a href="../downloads/docs/QUILF-Basics.doc">QUILF Basics</a>. Original publication: <a href="../downloads/docs/QUILF_PDF.pdf">doi:10.1016/0098-3004(93)90033-2</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Thermodynamic Tools, References & Calculators -->
+        <section class="content-band content-band--alt">
+            <div class="section-header">
+                <!-- Phosphor Flask -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor"><path d="M221.69,199.77,160,96.92V40h8a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h8V96.92L34.31,199.77A16,16,0,0,0,48,224H208a16,16,0,0,0,13.72-24.23ZM110.86,103.25A7.93,7.93,0,0,0,112,99.14V40h32V99.14a7.93,7.93,0,0,0,1.14,4.11L183.36,167c-12,2.37-29.07,1.37-51.75-10.11-15.91-8.05-31.05-12.32-45.22-12.81ZM48,208l28.54-47.58c14.25-1.74,30.31,1.85,47.82,10.72,19,9.61,35,12.88,48,12.88a69.89,69.89,0,0,0,19.55-2.7L208,208Z"/></svg>
+                <h2>Thermodynamic Tools, References &amp; Calculators</h2>
+            </div>
+            <p>I always find it difficult to find the thermodynamic data that I need when I need it. So, here is a running list of references and online tools.</p>
+
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h4><a href="http://www3.geosc.psu.edu/Courses/Geosc202/Resources.htm">Fugacity Coefficient Tables</a></h4>
+                    <p>Handy tables hosted as course materials at Penn State.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="https://pjb10.user.srcf.net/thermo/pure.html">Patrick Barrie's program for solving cubic equations of state</a></h4>
+                    <p>Online applet for calculating Z, V, phi, H &amp; S using various equations of state including Redlich-Kwong.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="../downloads/docs/Critical_Constants_and_Acentric_Factors.htm">Critical Constants and Acentric Factors for Selected Fluids</a></h4>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="../images/CriticalData.png">Critical constants and acentric factors for some inorganic compounds</a></h4>
+                    <p>From Perry's Chemical Engineers' Handbook.</p>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="../images/properties_of_molecules.jpg">Selected Properties of Molecules</a></h4>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="http://bilbo.chm.uri.edu/CHM112/tables/thermtable.htm">Thermodynamic Quantities for Substances and Ions at 25 C</a></h4>
+                </div>
+
+                <div class="tool-card">
+                    <h4><a href="../downloads/docs/Wagman_et_al_thermo.pdf">Heats, free energies, and equilibrium constants of some reactions involving O2, H2, H2O, C, CO, CO2, and CH4</a></h4>
+                    <p>Wagman et al. (1945). See <a href="../images/Wagman_et_al_usefulKFs.png">Table 8</a> for equilibrium constant values.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <a href="../index.html" class="site-footer__brand">Dr. Kayla Iacovino</a>
+            <p>Feel free to follow me on the socials.</p>
+            <div class="social-links">
+                <a href="https://geekstodon.com/@Kayla" aria-label="Mastodon" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M184,32H72A40,40,0,0,0,32,72V192a40,40,0,0,0,40,40h88a8,8,0,0,0,0-16H72a24,24,0,0,1-24-24v-8H184a40,40,0,0,0,40-40V72A40,40,0,0,0,184,32Zm24,112a24,24,0,0,1-24,24H48V72A24,24,0,0,1,72,48H184a24,24,0,0,1,24,24Zm-24-40v32a8,8,0,0,1-16,0V104a16,16,0,0,0-32,0v32a8,8,0,0,1-16,0V104a16,16,0,0,0-32,0v32a8,8,0,0,1-16,0V104a32,32,0,0,1,56-21.13A32,32,0,0,1,184,104Z"></path></svg>
+                </a>
+                <a href="https://bsky.app/profile/kaylaiacovino.com" aria-label="Bluesky" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C7.1 5.4 4.4 9.2 4 11.6c-.4 2.3.7 4.1 3.2 3.7-1.3 1.7-2.3 3.5-.8 5.2 2 2.3 4.3-.1 5.6-2.5 1.3 2.4 3.6 4.8 5.6 2.5 1.5-1.7.5-3.5-.8-5.2 2.5.4 3.6-1.4 3.2-3.7C20.6 9.2 17.9 5.4 12 2z"/></svg>
+                </a>
+                <a href="https://github.com/kaylai" aria-label="GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/kayla-iacovino/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Kayla_Iacovino" aria-label="Wikipedia" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24"><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.912-1.558.17C7.077 17.96 5.12 13.96 3.2 9.98c-.092-.19-.22-.38-.353-.536-.137-.156-.395-.327-.635-.395C1.727 8.9 1.4 8.86 1 8.82v-.45h4.83v.45c-.544.058-1.036.156-1.036.538 0 .19.078.378.156.566l3.572 7.79 1.746-3.57L8.64 10.38c-.253-.538-.526-.986-.76-1.227-.233-.24-.593-.37-.952-.4L6.66 8.38v-.46h5.06v.46c-.498.058-.92.137-.92.456 0 .175.078.39.176.585l1.647 3.458 1.595-3.264c.098-.194.176-.41.176-.595 0-.38-.547-.478-1.023-.536v-.46h3.88v.46c-.312.02-.644.078-.878.2-.234.124-.46.37-.633.674L12.09 13.12zm6.98-3.72c-.156-.537-.382-.798-.867-.846-.109-.01-.3-.02-.5-.02v-.45h4.19v.45c-.84.09-1.22.376-1.56 1.407L17.46 19.25h-.39L13.85 9.68c-.156-.41-.418-.636-.816-.66v-.56h4.72v.56c-.62.02-.98.174-.98.5 0 .136.04.312.117.526l2.18 6.05 1.77-5.596z"/></svg>
+                </a>
+            </div>
+            <p class="site-footer__copy">&copy; 2026 Dr. Kayla Iacovino</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
