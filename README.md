@@ -1,1 +1,1 @@
-Working site on github pages: https://kaylai.github.io/kaylaiacovino-com/
+Go to the website live at https://www.kaylaiacovino.com
