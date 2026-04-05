@@ -1,0 +1,165 @@
+<html>
+<head>
+<!-- Solving Cubic Equations of State -->
+<!-- Javascript program written by Patrick Barrie -->
+<!-- with online "help" on how the calculation is performed -->
+<!-- Program is Copyright Patrick J. Barrie 30 October 2003 -->
+<!-- Please acknowledge me if you use it! -->
+
+<title>Solving Cubic Equations of State</title>
+<meta name="description" content="This program solves the following cubic 
+equations of state: Van der Waals, Redlich-Kwong, Soave, Peng-Robinson, 
+and the Gasem modification to the Peng-Robinson equation. 
+Calculated parameters are compressibility factor, molar volume, fugacity 
+coefficient, and enthalpy and entropy departure functions.">
+<meta name="keywords" content="equation of state, van der Waals, Redlich,
+Kwong, Soave, Peng, Robinson, Gasem, compressibility factor, molar volume, 
+fugacity coefficient, departure functions">
+
+<script type="text/javascript" nonce="b57ee9994f10452c94a7d99c638" src="//local.adguard.org?ts=1775345950412&amp;type=content-script&amp;dmn=pjb10.user.srcf.net&amp;url=https%3A%2F%2Fpjb10.user.srcf.net%2Fthermo%2Fpure.html&amp;app=com.apple.Safari&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="b57ee9994f10452c94a7d99c638" src="//local.adguard.org?ts=1775345950412&amp;name=AdGuard%20Extra&amp;type=user-script"></script><script language="Javascript" src="purecalc.js">
+</script>
+</head>
+
+<!-- HTML code for the solving cubic equation of state page -->
+
+<body bgcolor="EEEEEE">
+<font face="arial">
+<form>
+<font color="red"><center>
+<h2>Patrick Barrie's program for solving cubic equations of state</h2>
+</font>
+</center>
+<p>
+<table border=1 align=center cellpadding=5 cellspacing=0>
+<tr align=left valign=top>
+
+<td width=40%>
+<font color="red">Select cubic equation of state:</font><p>
+<ul><input name="eos" type=radio value=1>
+<span onClick="eos[0].click()" style="cursor: pointer; cursor: hand;">
+Van der Waals</span>
+<a href="#" onClick="vdw=window.open('vdw.html','vdw','status=yes,resizable=yes,width=800,height=500,left=20,top=20'); return false;">info</a>
+</ul>
+<ul><input name="eos" type=radio value=2>
+<span onClick="eos[1].click()" style="cursor: pointer; cursor: hand;">
+Redlich-Kwong</span>
+<a href="#" onClick="rk=window.open('rk.html','rk','status=yes,resizable=yes,width=800,height=500,left=20,top=50'); return false;">info</a>
+</ul>
+<ul><input name="eos" type=radio value=3>
+<span onClick="eos[2].click()" style="cursor: pointer; cursor: hand;">
+Soave-Redlich-Kwong</span>
+<a href="#" onClick="srk=window.open('srk.html','srk','status=yes,resizable=yes,width=800,height=600,left=20,top=80'); return false;">info</a>
+</ul>
+<ul><input name="eos" type=radio checked value=4>
+<span onClick="eos[3].click()" style="cursor: pointer; cursor: hand;">
+Peng-Robinson</span>
+<a href="#" onClick="pr=window.open('pr.html','pr','status=yes,resizable=yes,width=800,height=600,left=20,top=110'); return false;">info</a>
+</ul>
+<ul><input name="eos" type=radio value=5>
+<span onClick="eos[4].click()" style="cursor: pointer; cursor: hand;">
+Peng-Robinson-Gasem</span>
+<a href="#" onClick="prgasem=window.open('prgasem.html','prgasem','status=yes,resizable=yes,width=800,height=750,left=20,top=110'); return false;">info</a>
+</ul>
+</td>
+<td width=60%>
+<font color="red">Specify critical parameters or select chemical from list:
+</font>
+<a href="#" onClick="critical=window.open('critical.html','critical','status=yes,resizable=yes,width=800,height=600,left=450,top=50'); return false;">info</a>
+<p>
+<ul><select name="substance" onClick=filling(this.form)>
+	<option value=1>specify critical parameters
+	<option value=2>nitrogen
+	<option value=3>oxygen
+	<option value=4>hydrogen
+	<option value=5>carbon dioxide
+	<option value=6>methane
+	<option value=7>ethane
+	<option value=8>propane
+	<option value=9>n-butane
+	<option value=10>n-pentane
+	<option value=11>n-hexane
+	<option value=12>ethylene
+	<option value=13>propylene
+	<option value=14>acetylene
+	<option value=15>benzene
+	<option value=16>toluene
+	<option value=17>water
+</select></ul>
+<p>
+<ul><i>T<sub>c</sub></i> = <input name="Tc" size=10>K</ul>
+<ul><i>P<sub>c</sub></i> = <input name="Pc" size=10>bar</ul>
+<ul><i>&omega;</i> = <input name="Wc" size=10> <font size=-2>(acentric factor)</font></ul>
+</td>
+</tr>
+<tr align=left valign=top>
+<td width=40%>
+<font color="red">Select conditions of interest:</font><p>
+<ul><i>T</i> = <input name="T" size = 10>K</ul>
+<ul><i>P</i> = <input name="P" size = 10>bar</ul>
+
+Click this button to calculate:
+<input value=Calculate type=button onClick=calculation(this.form)>
+<p>
+Click this button to reset form:
+<input value=Reset type=button onClick=reset(this.form)>
+</td>
+<td width=60%>
+<font color="red">Solutions to the cubic equation are:</font>
+<a href="#" onClick="puresolutions=window.open('puresolutions.html','puresolutions','status=yes,resizable=yes,width=800,height=600,left=450,top=80'); return false;">info</a>
+<p>
+<i>Z</i> = <input name="Z0" readonly size=10> 
+state = <input name="state0" readonly size=18>
+<i>V</i> = <input name="vol0" readonly size = 10><font size=-1>m<sup>3</sup>/mol
+</font><p>
+<i>Z</i> = <input name="Z2" readonly size=10> 
+state = <input name="state2" readonly size=18>
+<i>V</i> = <input name="vol2" readonly size = 10><font size=-1>m<sup>3</sup>/mol
+</font><p>
+<i>Z</i> = <input name="Z1" readonly size=10> 
+state = <input name="state1" readonly size=18>
+<p>
+</td>
+</tr>
+<tr align=left valign=top>
+<td width=40%>
+&nbsp;
+</td>
+<td width=60%>
+<font color="red">Advanced calculations:
+</font>
+<a href="#" onClick="fugacity=window.open('fugacity.html','fugacity','status=yes,resizable=yes,width=950,height=800,left=100,top=20'); return false;">info</a>
+<br>
+<i>&phi;</i> = <input name="phi0" readonly size=9>
+<i>H</i><sup>dep</sup> = <input name="Hdep0" readonly size=8>
+<i>S</i><sup>dep</sup> = <input name="Sdep0" readonly size=8>
+ (1st root)<br>
+<i>&phi;</i> = <input name="phi2" readonly size=9>
+<i>H</i><sup>dep</sup> = <input name="Hdep2" readonly size=8>
+<i>S</i><sup>dep</sup> = <input name="Sdep2" readonly size=8>
+ (2nd root)<br>
+<img src="dot_clear.gif" width=215 height=5>
+<font size=-1>J/mol</font>
+<img src="dot_clear.gif" width=85 height=5>
+<font size=-1>J/mol.K</font>
+
+</td>
+</tr>
+</table>
+<p>
+</form>
+<hr>
+<table>
+<table border=0 width=100%>
+<tr>
+<td align="left" width=70%>
+Return to Patrick Barrie's 
+<a href="index.html">thermodynamics teaching page</a>
+</td>
+<td align="right" width=30%>
+E-mail: pjb10 followed by @ and then followed by cam.ac.uk
+</td>
+</tr>
+</table>
+
+</body>
+</html>
